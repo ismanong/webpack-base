@@ -1,0 +1,35 @@
+@charset "utf-8";
+*,html,body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, label,/* form elements 表单元素 */
+th, td, /* table elements 表格元素 */
+img/* img elements 图片元素 */{border: none;margin: 0;padding: 0;}
+/**-----重置默认样式-----**/
+input:focus,button:focus{outline: none}
+input,button,select,textarea{outline:none}
+textarea{resize:none}/*文本小角*//*select默认三角*/
+select{appearance:none;-webkit-appearance:none;}
+/*@font-face {font-family: 'myFont';src:url('../fonts/myFont.TTF');}*/
+html,body/*,button, input, select, textarea*/ {/** 设置默认字体 **/
+    font: 14px/24px myFont,'Microsoft Yahei',Arial,SimHei,SimSun,Helvetica;
+}
+/*body{font-size: 62.5%;}*/
+h1, h2, h3, h4, h5, h6,label{ font-size: 100%; font-weight: normal;}
+i,b,em,big,small{font-weight: normal;font-style: normal;}/*斜体,粗体,强调,+1,-1,*/
+ul, ol { list-style: none; }/** 重置列表元素 **/
+a { text-decoration: none; color:#333;color:inherit;}/** 重置超链接元素 **/
+a:hover {text-decoration: none; color:#333;color:inherit;}
+img{ border:0px;}/** 重置图片元素 **/
+table { border-collapse: collapse; border-spacing: 0;}/** 重置表格元素 **/
+.clearfix:after{content: '';display: block;height: 0;visibility: hidden;clear: both;}
+.clearfix{clear: both;zoom: 1;}
+*, :after, :before {-webkit-box-sizing: border-box;box-sizing: border-box;}
+/*___________________________清楚默认end___________________________*/
+.router-link-active{
+   color:#f34f09 !important;
+}
+
+
+

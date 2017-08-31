@@ -1,0 +1,47 @@
+$table-border:        #bfcbd9 !default;
+#content{
+  padding: 2em;
+}
+.box-border-padding{
+  border: 1px solid $table-border;
+  padding: 1em;
+}
+
+
+
+//---------------------------------ETL
+.icon-border{
+  padding: 0.5em;
+  border:1px solid $table-border;
+  border-radius: 5px;
+}
+.title-saml{
+  padding:0 1em;
+
+
+  i{
+    float: right;
+  }
+}
+
+.custom-param {
+  border: 1px solid $table-border;
+  border-bottom: none;
+  li{
+
+    display: flex;
+    border-bottom: 1px solid $table-border;
+    text-align: center;
+
+    >span,>p,>div{
+      flex: 1;
+      padding: 0.5em;
+    }
+    >p{
+      border-right: 1px solid $table-border;
+    }
+
+  }
+}
+
+//---------------------------------init
