@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e296388-44a3-4f21-ad46-889bb5c0b4ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/4-quickBuild-vue/package.json" afterPath="$PROJECT_DIR$/4-quickBuild-vue/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -115,12 +115,12 @@
       <updated>1504238602270</updated>
       <workItem from="1504238620201" duration="1747000" />
       <workItem from="1504252345191" duration="79000" />
-      <workItem from="1504252484998" duration="173000" />
+      <workItem from="1504252484998" duration="769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1999000" />
+    <option name="totallyTimeSpent" value="2595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
