@@ -27,7 +27,6 @@
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.4.2",
     "vuex": "^2.3.1",
-    "webpack-dev-server": "^2.7.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
