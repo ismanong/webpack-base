@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 // 挂在路由上的展示组件
 import index from './components/index.vue'
 

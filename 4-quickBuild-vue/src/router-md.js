@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+/*
+* highlight theme
+* */
+import 'highlight.js/styles/color-brewer.css';
 
 // 挂在路由上的展示组件
 // import index from './doc/strart.md'
-
 
 
 // 1. Use plugin.
@@ -14,7 +17,7 @@ Vue.use(VueRouter)
 //按需加载 两种方式
 // const profit = resolve => require(['./pages/profit/profit.vue'], resolve )
 const index = r => require.ensure([], () => r(require('./doc/strart.md')), 'index');
-const model1 = r => require.ensure([], () => r(require('./doc/pagination/Pagination.md')), 'model1');
+const md1 = r => require.ensure([], () => r(require('./doc/pagination/Pagination.md')), 'md1');
 
 
 // 3. Create the router
@@ -24,7 +27,7 @@ const routerMd = new VueRouter({
     routes: [
         // { path: '/', redirect: '/start' }, // 默认路由
         { path: '/', component: index },
-        { path: '/model1', component: model1 },
+        { path: '/model1', component: md1 },
 
         {
             path: '*',

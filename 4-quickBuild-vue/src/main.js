@@ -1,22 +1,44 @@
 import 'babel-polyfill'
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-default/index.css'
+
 import NProgress from 'nprogress'; // Progress 进度条
-// Progress 进度条 样式
-import 'nprogress/nprogress.css';
-// highlight theme
-import 'highlight.js/styles/monokai-sublime.css';
+import 'nprogress/nprogress.css'; // Progress 进度条 样式
 
 import './js/common.js' //全局公共js
 import APP from './App.vue'
-// import router from './router.js'
-import routerMd from './router-md.js'
+
 import store from './store'
 
-var router = router || routerMd;
+// import router from './router.js'
+import routerMd from './router-md.js'
+var router = routerMd;
 
-Vue.use(ElementUI)
+/*
+* element 完整引入
+* */
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-default/index.css'
+// Vue.use(ElementUI)
+
+/*
+* element 按需引入
+* */
+import {
+    Menu,
+    MenuItem,
+    MenuItemGroup,
+    Icon,
+    Row,
+    Col
+}  from 'element-ui'
+Vue.use(Menu) // Vue.component(Menu.name, Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
+Vue.use(Icon)
+Vue.use(Row)
+Vue.use(Col)
+
+
 
 router.beforeEach((to, from, next) => {
 
