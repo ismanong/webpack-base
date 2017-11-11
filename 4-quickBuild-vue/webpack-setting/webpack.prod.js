@@ -15,7 +15,14 @@ module.exports = merge(common, {
         filename: 'js/[name]-[chunkhash:8].js',
         chunkFilename:'js/[name]-[chunkhash:8].js'
     },
-
+    externals :
+        {
+            'babel-polyfill': 'window', // global  self  window
+            vue: 'Vue',
+            vuex: 'Vuex',
+            'vue-router': 'VueRouter'
+        }
+    ,
     plugins: [
 
 

@@ -4,12 +4,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
     plugins: [
 
-        new HtmlWebpackPlugin({
-            filename: 'a.html',
-            template: __dirname + '/src/app.html',
-            inject: 'true',
-            chunksSortMode: 'dependency'
-        }),
+        new HtmlWebpackPlugin(),
 
         /*
          * 抽取公共代码

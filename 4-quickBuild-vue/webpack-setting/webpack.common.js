@@ -72,7 +72,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 use: 'babel-loader',
-                exclude: /node_modules/  //排除不处理的目录，正常使用情况下，只需要/node_modules/
+                exclude: /node_modules/  //排除不处理的目录(禁止编译 node_modules)，正常使用情况下，只需要/node_modules/
             },
 
             // vue loader
